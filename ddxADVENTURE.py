@@ -56,7 +56,7 @@ def first_decision():
         print("\n1. Ask about the vital signs")
         print("2. Review the chart first")
         print("3. Go see the patient immediately")
-        print("4. *Pretend you didn't hear and keep typing notes*")
+        print("4. Pretend you didn't hear and keep typing notes*")
         
         choice = input("\nYour choice (1-4): ")
         
@@ -67,7 +67,7 @@ def first_decision():
             second_decision()
             break
         elif choice == "2":
-            type_text("Dr. Rampy sighs. 'AHEM, I said... interesting VITALS! Time is of the essence, doctor.'")
+            type_text("Dr. Rampy sighs. 'AHEM, didn't I JUST say... 'interesting VITALS'?! Time is of the essence, doctor.'")
             player["reputation"] -= 5
             continue
         elif choice == "3":
